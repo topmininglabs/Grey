@@ -1,23 +1,22 @@
 # Grey 一键多开脚本(Windows)
-### ・使用说明：  
-####  1.下载并解压缩
-####  2.下载最新版的Grey执行程序并将其解压缩到步骤1下载并解压的Grey/Grey01/01文件夹
-####  3.复制粘贴Grey/Grey01/01文件夹并修改名称为02~50（每个文件夹对应一个Grey节点，根据要开的节点创建文件夹数量，确保所有文件夹都有Grey执行程序）
-####  4.安装步骤1下载并解压的Grey/沙盒程序
-####  5.执行沙盒程序，点击
+#### ・使用说明：  
+##### &emsp;1.下载并解压缩[Grey-windows-auto.zip](https://github.com/topmininglabs/Grey/raw/main/Grey-windows-auto.zip)文件包
+##### &emsp;2.下载最新版的[Grey](https://greycloud.oss-accelerate.aliyuncs.com/Grey/WindowsGrey0.0.7.zip)执行程序并将其解压缩到步骤1下载并解压完成的”Grey-windows-auto/Grey01/01“文件夹
+##### &emsp;3.复制粘贴”Grey-windows-auto/Grey01/“目录下的”01“文件夹并修改名称为02~50（每个文件夹对应一个Grey节点，根据要多开的节点数创建文件夹数量，确保所有文件夹都有Grey执行程序）
+##### &emsp;4.安装步骤1下载并解压完成的”Grey-windows-auto/01.Install-Sandboxie-Plus-x64-v0.8.2.exe“沙盒程序
+##### &emsp;5.打开步骤1下载并解压完成的”Grey-windows-auto/02.Config-Sandbox-confing-50box.txt“文件，Ctrl+A选中所有内容，Ctrl+C复制所有内容
+##### &emsp;6.打开沙盒程序，点击”Option->Edit ini file“，跳出记事本后Ctrl+A选中所有内容，按删除键删除所有内容，Ctrl+V将步骤5复制的内容全部粘贴到该文件，Ctrl+S保存并关闭（此时沙盒程序会自动生成50个沙盒，如未出现请重复步骤4-6）
+##### &emsp;7.双击下载并解压完成的”Grey-windows-auto/03.Run-Grey_Script.bat“脚本文件自动启动运行50个Grey节点
+#### ・注意事项：  
+##### &emsp;1.此脚本仅适用于未安装和执行过Grey程序的Windows系统，运行此脚本之前若单独运行过Grey程序则生成的所有节点将使用同一个地址且仅一个节点运行有效
+##### &emsp;2.为防止Grey节点掉线超过12小时导致收益清零，此脚本每4个小时会自动重启Grey节点
+##### &emsp;3.此脚本运行后将无限循环执行，若要退出需手动关闭”Grey-windows-auto/03.Run-Grey_Script.bat“脚本的cmd窗口，与启动中的沙盒程序
+##### &emsp;4.此脚本仅在Windows10系统执行测试过，不过Windows7系统应该也可以执行
+##### &emsp;5.多开节点运行的节点收益有被官方清零的风险，请自行承担该风险
+##### &emsp;6.激活节点需要至少一个GBR代币，可通过官方水龙头[官方水龙头](https://faucet.ethgrey.com/)申请一个代币，也可到各微信群/QQ群找水商买水
+#### ・常用链接：  
+##### &emsp;1.Grey官网：https://ethgrey.org/
+##### &emsp;2.Grey区块浏览器：https://www.ethgrey.com/
+##### &emsp;3.Grey官方水龙头：https://faucet.ethgrey.com/
+##### &emsp;4.Sandbox沙盒程序官网：https://sandboxie-plus.com/
 
-# zkTube 一键多开脚本
-##### ・一键脚本运行方法(整行复制粘贴执行)：
-###### ・Ubuntu：
-##### ___`sudo apt update && sudo apt-get install wget curl`___
-##### ___`wget https://raw.githubusercontent.com/topmininglabs/zktube/main/topmining_zktube.sh && chmod +x ./topmining_zktube.sh && sudo ./topmining_zktube.sh`___
-###### ・CentOS：
-##### ___`sudo yum update && sudo yum install wget curl`___
-##### ___`wget https://raw.githubusercontent.com/topmininglabs/zktube/main/topmining_zktube.sh && chmod +x ./topmining_zktube.sh && sudo ./topmining_zktube.sh`___
-
-##### ・注意事项1：此脚本仅支持Ubuntu系统和CentOS系统
-##### ・注意事项2：此脚本虽可实现一地址多节点，鉴于官方尚未明确指出是否支持一个地址多开节点，使用此脚本多开的需自行承担风险（可能会有无收益或收益被清零的风险）
-##### ・注意事项3：关于系统配置要求，请参照下面官方说明：
-###### zkTube矿机配置是建议32核64G（该配置上考虑了部分弹性预留，主要是为了避免复杂证明的计算可能带来的计算消耗溢出，引发Prover异常，从而触发prover挖矿惩罚机制，造成不必要的损失）。我们所采用的是当网络有使用的时候才会有区块产生，也就是当一个交易或者是一个任务抛出的时候需要带宽去抢任务，带宽越高抢到任务的概率越高，当任务抢到并计算完成的时候才会有奖励。真正做到了没有垃圾数据而且不会一直高消耗的空跑CPU。
-##### ・注意事项4：本脚本可无限制多开节点，请根据自身系统配置自行决定多开节点数量，操作选项（5）若输入1节点则只部署一个节点
-##### ・注意事项5：多开节点数量过多有可能导致系统奔溃或无法运行，请自行承担风险
